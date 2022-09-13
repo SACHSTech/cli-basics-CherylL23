@@ -1,1 +1,26 @@
-
+@CherylL23 ➜ /workspaces/cli-basics-CherylL23 (main) $ pwd
+/workspaces/cli-basics-CherylL23
+@CherylL23 ➜ /workspaces/cli-basics-CherylL23 (main) $ mkdir CLIBasicsFolder
+@CherylL23 ➜ /workspaces/cli-basics-CherylL23 (main) $ ls
+CLIBasicsFolder  README.md  TerminalSession.txt
+@CherylL23 ➜ /workspaces/cli-basics-CherylL23 (main) $ cd CLIBasicsFolder
+@CherylL23 ➜ /workspaces/cli-basics-CherylL23/CLIBasicsFolder (main) $ touch myfile.txt
+@CherylL23 ➜ /workspaces/cli-basics-CherylL23/CLIBasicsFolder (main ✗) $ echo Cheryl, ICS4Ub >> myfile.txt
+@CherylL23 ➜ /workspaces/cli-basics-CherylL23/CLIBasicsFolder (main ✗) $ cat myfile.txt
+Cheryl, ICS4Ub
+@CherylL23 ➜ /workspaces/cli-basics-CherylL23/CLIBasicsFolder (main ✗) $ cp myfile.txt myfile_copy.txt
+@CherylL23 ➜ /workspaces/cli-basics-CherylL23/CLIBasicsFolder (main ✗) $ ls
+myfile_copy.txt  myfile.txt
+@CherylL23 ➜ /workspaces/cli-basics-CherylL23/CLIBasicsFolder (main ✗) $ mv myfile_copy.txt myfile2.txt
+@CherylL23 ➜ /workspaces/cli-basics-CherylL23/CLIBasicsFolder (main ✗) $ mv myfile2.txt ..
+@CherylL23 ➜ /workspaces/cli-basics-CherylL23/CLIBasicsFolder (main ✗) $ ls /workspaces/cli-basics-CherylL23
+CLIBasicsFolder  myfile2.txt  README.md  TerminalSession.txt
+@CherylL23 ➜ /workspaces/cli-basics-CherylL23/CLIBasicsFolder (main ✗) $ cd ..
+@CherylL23 ➜ /workspaces/cli-basics-CherylL23 (main ✗) $ rm -r myfile.txt
+rm: cannot remove 'myfile.txt': No such file or directory
+@CherylL23 ➜ /workspaces/cli-basics-CherylL23 (main ✗) $ rm CLIBasicsFolder/myfile.txt
+@CherylL23 ➜ /workspaces/cli-basics-CherylL23 (main ✗) $ rmdir CLIBasicsFolder
+@CherylL23 ➜ /workspaces/cli-basics-CherylL23 (main ✗) $ ls
+myfile2.txt  README.md  TerminalSession.txt
+@CherylL23 ➜ /workspaces/cli-basics-CherylL23 (main ✗) $ ls /workspaces
+cli-basics-CherylL23
